@@ -1,0 +1,26 @@
+$dark: #181D48;
+$light: #fff;
+
+:root {
+    font-size: 16px;
+    scroll-behavior: smooth;
+    }
+
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica Neue';
+    color: #181D48;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+}
+
+// Imports
+@import 'nav';
+@import 'header';
+@import 'featured';
+@import 'button';

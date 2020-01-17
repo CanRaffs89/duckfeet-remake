@@ -1,0 +1,66 @@
+#featured-section {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 100px 2fr 3fr 100px;
+
+    #featured-button {
+        color: $light;
+        position: absolute;
+        top: 110%;
+
+        span {
+            margin-top: 10px;
+        }
+    }
+
+    #left-arrow {
+        height: 67px;
+        width: 27px;
+        background: url('../img/svg/arrow_dark.svg') no-repeat 50% 50%;
+        background-size: cover;
+        margin: auto;
+    }
+
+    #right-arrow {
+        height: 67px;
+        width: 27px;
+        background: url('../img/svg/arrow_dark.svg') no-repeat 50% 50%;
+        background-size: cover;
+        margin: auto;
+        transform: rotate(180deg);
+    }
+
+    .text-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .text-wrapper {
+            height: 370px;
+            width: 370px;
+            
+            padding-left: 20px;
+            border-left: solid $dark 3px;
+
+            h1 {
+                font-family: 'Din Condensed';
+                font-weight: 700;
+                font-size: 6.875rem;
+                letter-spacing: 0.3rem;
+                text-transform: uppercase;
+                margin: 0;
+            }
+    
+            p {
+                font-weight: 300;
+                font-size: 2.1875rem;
+                margin: 15px 0;
+            }
+        }
+    }
+
+    #faborg-image {
+        background: url('../img/faborg_group.png') no-repeat 50% 50%;
+        background-size: contain;
+    }
+}

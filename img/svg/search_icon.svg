@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="28px" height="29px" viewBox="0 0 28 29" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>search_icon</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-42.000000, -36.000000)" stroke="#181D48">
+            <g id="navbar">
+                <g id="search_icon" transform="translate(44.000000, 38.000000)">
+                    <g transform="translate(0.089606, 0.000000)">
+                        <ellipse id="Oval" stroke-width="3" cx="10.5359001" cy="10.8870968" rx="10.5359001" ry="10.8870968"></ellipse>
+                        <path d="M17.950052,18.5483871 L23.8033299,24.5967742" id="Line" stroke-width="3" stroke-linecap="square"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="62px" height="62px" viewBox="0 0 62 62" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>instagram_icon</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-665.000000, -2520.000000)">
+            <g id="footer" transform="translate(0.000000, 2391.000000)">
+                <g id="instagram_icon" transform="translate(666.000000, 130.000000)">
+                    <g>
+                        <circle id="Oval" stroke="#FFFFFF" stroke-width="2" cx="30" cy="30" r="30"></circle>
+                        <circle id="Oval" stroke="#FFFFFF" stroke-width="3" cx="30.4285714" cy="30.4285714" r="8.14285714"></circle>
+                        <circle id="Oval" fill="#FFFFFF" cx="39.4285714" cy="19.7142857" r="1.71428571"></circle>
+                        <rect id="Rectangle" stroke="#FFFFFF" stroke-width="3" x="14.3571429" y="14.3571429" width="31.2857143" height="31.2857143" rx="8"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
