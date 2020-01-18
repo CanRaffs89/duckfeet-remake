@@ -1,33 +1,43 @@
 #featured-section {
     height: 100vh;
-    display: grid;
-    grid-template-columns: 100px 2fr 3fr 100px;
+    position: relative;
 
     #featured-button {
         color: $light;
         position: absolute;
-        top: 110%;
+        top: 10%;
 
         span {
             margin-top: 10px;
         }
     }
 
-    #left-arrow {
+    #left-arrow, #right-arrow {
         height: 67px;
         width: 27px;
         background: url('../img/svg/arrow_dark.svg') no-repeat 50% 50%;
         background-size: cover;
         margin: auto;
+        position: absolute;
+        top: 50%;
+        cursor: pointer;
+    }
+
+    #left-arrow {
+        left: 15px;
     }
 
     #right-arrow {
-        height: 67px;
-        width: 27px;
-        background: url('../img/svg/arrow_dark.svg') no-repeat 50% 50%;
-        background-size: cover;
-        margin: auto;
         transform: rotate(180deg);
+        right: 15px;
+    }
+
+    .slide {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        height: 100%;
+        width: 94%;
+        margin: 0 auto;
     }
 
     .text-section {
@@ -61,6 +71,16 @@
 
     #faborg-image {
         background: url('../img/faborg_group.png') no-repeat 50% 50%;
+        background-size: contain;
+    }
+
+    #alborg-image {
+        background: url('../img/alborg_group.png') no-repeat 50%;
+        background-size: contain;
+    }
+
+    #tonder-image {
+        background: url('../img/tonder_group.png') no-repeat 50%;
         background-size: contain;
     }
 }

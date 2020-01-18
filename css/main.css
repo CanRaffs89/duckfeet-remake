@@ -155,38 +155,48 @@ nav ul li a {
 
 #featured-section {
   height: 100vh;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 100px 2fr 3fr 100px;
-      grid-template-columns: 100px 2fr 3fr 100px;
+  position: relative;
 }
 
 #featured-section #featured-button {
   color: #fff;
   position: absolute;
-  top: 110%;
+  top: 10%;
 }
 
 #featured-section #featured-button span {
   margin-top: 10px;
 }
 
-#featured-section #left-arrow {
+#featured-section #left-arrow, #featured-section #right-arrow {
   height: 67px;
   width: 27px;
   background: url("../img/svg/arrow_dark.svg") no-repeat 50% 50%;
   background-size: cover;
   margin: auto;
+  position: absolute;
+  top: 50%;
+  cursor: pointer;
+}
+
+#featured-section #left-arrow {
+  left: 15px;
 }
 
 #featured-section #right-arrow {
-  height: 67px;
-  width: 27px;
-  background: url("../img/svg/arrow_dark.svg") no-repeat 50% 50%;
-  background-size: cover;
-  margin: auto;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
+  right: 15px;
+}
+
+#featured-section .slide {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  height: 100%;
+  width: 94%;
+  margin: 0 auto;
 }
 
 #featured-section .text-section {
@@ -225,6 +235,16 @@ nav ul li a {
 
 #featured-section #faborg-image {
   background: url("../img/faborg_group.png") no-repeat 50% 50%;
+  background-size: contain;
+}
+
+#featured-section #alborg-image {
+  background: url("../img/alborg_group.png") no-repeat 50%;
+  background-size: contain;
+}
+
+#featured-section #tonder-image {
+  background: url("../img/tonder_group.png") no-repeat 50%;
   background-size: contain;
 }
 
