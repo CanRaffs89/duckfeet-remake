@@ -274,3 +274,122 @@ button a {
   color: #fff;
   text-decoration: none;
 }
+
+button#small {
+  font-size: 2rem;
+}
+
+#info-section {
+  width: 100%;
+  height: 100vh;
+  background: url("../img/section_image.jpg") no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#info-section .info-content {
+  width: 50%;
+  margin-left: 10%;
+}
+
+#info-section h1, #info-section h2 {
+  font-family: 'Din Condensed';
+  color: #fff;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+#info-section h1 {
+  font-size: 6.875rem;
+  letter-spacing: 0.6rem;
+  line-height: 0.6;
+}
+
+#info-section h2 {
+  font-size: 5rem;
+  letter-spacing: 0.4rem;
+}
+
+#info-section p {
+  font-size: 2.375rem;
+  font-weight: 300;
+  color: #fff;
+  margin: 0 0 50px 0;
+}
+
+#footer {
+  width: 100%;
+  height: 550px;
+  background-color: #181D48;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#footer #footer-top {
+  height: 45%;
+  width: 80%;
+  margin: 0 auto;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 10px;
+}
+
+#footer #footer-top h1 {
+  font-family: 'Din Condensed';
+  font-size: 3.75rem;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+#footer #footer-top #social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+}
+
+#footer #footer-top .social-icon {
+  height: 60px;
+  width: 60px;
+  margin: 0 20px;
+}
+
+#footer #footer-top #facebook-icon {
+  background: url("../img/svg/facebook_icon.svg");
+  background-size: cover;
+}
+
+#footer #footer-top #twitter-icon {
+  background: url("../img/svg/twitter_icon.svg");
+  background-size: cover;
+}
+
+#footer #footer-top #instagram-icon {
+  background: url("../img/svg/instagram_icon.svg");
+  background-size: cover;
+}
+
+#footer #footer-top #youtube-icon {
+  background: url("../img/svg/youtube_icon.svg");
+  background-size: cover;
+}
+
+#footer #footer-bottom {
+  height: 55%;
+  width: 100%;
+}

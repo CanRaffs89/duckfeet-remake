@@ -1,0 +1,61 @@
+#footer {
+    width: 100%;
+    height: 550px;
+    background-color: $dark;
+    color: $light;
+    display: flex;
+    flex-direction: column;
+
+    #footer-top {
+        height: 45%;
+        width: 80%;
+        margin: 0 auto;
+        border-bottom: 1px solid $light;
+        padding-bottom: 10px;
+
+        h1 {
+            font-family: 'Din Condensed';
+            font-size: 3.75rem;
+            letter-spacing: 0.3rem;
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+        #social {
+            display: flex;
+            justify-content: center;
+            margin: 0 auto;
+        }
+
+        .social-icon {
+            height: 60px;
+            width: 60px;
+            margin: 0 20px;
+        }
+
+        #facebook-icon {
+            background: url('../img/svg/facebook_icon.svg');
+            background-size: cover;
+        }
+
+        #twitter-icon {
+            background: url('../img/svg/twitter_icon.svg');
+            background-size: cover;
+        }
+
+        #instagram-icon {
+            background: url('../img/svg/instagram_icon.svg');
+            background-size: cover;
+        }
+
+        #youtube-icon {
+            background: url('../img/svg/youtube_icon.svg');
+            background-size: cover;
+        }
+    }
+
+    #footer-bottom {
+        height: 55%;
+        width: 100%;
+    }
+}
