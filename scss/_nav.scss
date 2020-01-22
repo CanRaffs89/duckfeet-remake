@@ -1,10 +1,28 @@
 // Positioned Items
+.navburger {
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    top: 22px;
+    left: 25px;
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+
+    span {
+        width: 100%;
+        height: 3px;
+        background: $dark;
+        margin: 2px 0;
+    }
+}
+
 #search {
     height: 25px;
     width: 25px;
     position: absolute;
     top: 35px;
-    left: 25px;
+    right: 85px;
     background: url('../img/svg/search_icon.svg');
     background-size: cover;
     cursor: pointer;
@@ -38,6 +56,7 @@
 nav {
     height: 100px;
     width: 100%;
+    z-index: 5;
 
     ul {
         display: flex;
@@ -47,6 +66,8 @@ nav {
         height: 100%;
         justify-content: center;
         align-items: center;
+        transition: all 0.3s ease-in-out;
+        z-index: 4;
 
         :nth-child(1) {
             margin-right: 9%;
@@ -74,5 +95,72 @@ nav {
                 font-size: 1.5625rem;
             }
         }
+    }
+}
+
+@media (max-width: 800px) {
+    .navburger {
+        display: flex;
+
+        .icon-active {
+            display: none;
+        }
+    }
+
+    #search {
+        height: 22px;
+        width: 22px;
+        top: 22px;
+    }
+    
+    #logo {
+        height: 48px;
+        width: 48px;
+        top: 5px;
+    }
+    
+    #cart {
+        height: 22px;
+        width: 40px;
+        top: 22px;
+    }
+
+    nav {
+        height: 60px;
+
+        .menu-active {
+            transform: translateY(110px);
+        }
+        
+        ul {
+            width: 100%;
+            flex-direction: column;
+            transform: translateY(-300px);
+
+            li {
+                background: $light;
+                width: 100%;
+                text-align: center;
+                min-height: 40px;
+            }
+
+            :nth-child(1) {
+                margin: 0;
+            }
+    
+            :nth-child(2) {
+                margin: 0;
+            }
+    
+            :nth-child(3) {
+                margin: 0;
+            }
+    
+            :nth-child(4) {
+                margin: 0;
+            }
+        }
+
+        
     }
 }

@@ -42,3 +42,29 @@
         transform: rotate(180deg);
     }
 }
+
+@media (max-width: 1024px) {
+    #header {
+        h1 {
+            font-size: 3rem;
+
+            span {
+                font-size: 4rem;
+            }
+        }
+
+        #second-text {
+            font-size: 3.5rem;
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    #header {
+        h1 {
+            br {
+                display: none;
+            }
+        }
+    }
+}

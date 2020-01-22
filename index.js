@@ -1,3 +1,16 @@
+// Navburger animation
+function menuToggle() {
+    // Toggle hamburger menu lines when menu is open
+    const menuLines = document.querySelectorAll('.hidden')
+    menuLines.forEach(span => span.classList.toggle('icon-active'));
+
+    // Toggle navlinks
+    document.querySelector('.nav-items').classList.toggle('menu-active');
+}
+
+// Give menu icon toggle function
+document.querySelector('.navburger').addEventListener('click', menuToggle);
+
 // Featured Section Slider
 let slides = document.querySelectorAll('.slide'),
     arrowRight = document.querySelector('#right-arrow'),
