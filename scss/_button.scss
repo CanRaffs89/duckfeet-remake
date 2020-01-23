@@ -22,3 +22,11 @@ button {
 button#small {
     font-size: 2rem;
 }
+
+@media (max-width: 900px) {
+    button {
+        font-size: 1.6rem;
+        height: 40px;
+        width: 180px;
+    }
+}

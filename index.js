@@ -27,20 +27,20 @@ function reset(){
 // Initialise Featured Slider
 function startSlides(){
     reset();
-    slides[0].style.display = 'grid';
+    slides[0].style.display = 'flex';
 }
 
 // Show previous section
 function slideLeft() {
     reset();
-    slides[current - 1].style.display = 'grid';
+    slides[current - 1].style.display = 'flex';
     current--;
 }
 
 // Show next section 
 function slideRight() {
     reset();
-    slides[current + 1].style.display = 'grid';
+    slides[current + 1].style.display = 'flex';
     current++;
 }
 

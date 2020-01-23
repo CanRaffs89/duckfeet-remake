@@ -13,10 +13,10 @@
     }
 
     #left-arrow, #right-arrow {
-        height: 67px;
-        width: 27px;
+        height: 57px;
+        width: 17px;
         background: url('../img/svg/arrow_dark.svg') no-repeat 50% 50%;
-        background-size: cover;
+        background-size: contain;
         margin: auto;
         position: absolute;
         top: 50%;
@@ -33,10 +33,9 @@
     }
 
     .slide {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+        display: flex;
         height: 100%;
-        width: 94%;
+        width: 90%;
         margin: 0 auto;
     }
 
@@ -44,11 +43,10 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        width: 40%;
 
         .text-wrapper {
-            height: 370px;
-            width: 370px;
-            
+            height: auto;
             padding-left: 20px;
             border-left: solid $dark 3px;
 
@@ -69,18 +67,59 @@
         }
     }
 
+    .image-section {
+        width: 60%;
+    }
+
     #faborg-image {
-        background: url('../img/faborg_group.png') no-repeat 50% 50%;
+        background: url('../img/faborg.png') no-repeat 50% 50%;
         background-size: contain;
     }
 
     #alborg-image {
-        background: url('../img/alborg_group.png') no-repeat 50%;
+        background: url('../img/alborg.png') no-repeat 50%;
         background-size: contain;
     }
 
     #tonder-image {
-        background: url('../img/tonder_group.png') no-repeat 50%;
+        background: url('../img/tonder.png') no-repeat 50%;
         background-size: contain;
+    }
+}
+
+@media (max-width: 900px) {
+    #featured-section {
+        .text-section {
+            .text-wrapper {
+                h1 {
+                    font-size: 5.3rem;
+                }
+
+                p {
+                    font-size: 1.7rem;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    #featured-section {
+        #featured-button {
+            top: 3%;
+        }
+        
+        .text-section {
+            .text-wrapper {
+                border: none;
+                height: auto;
+                width: auto;
+                padding: 0;
+
+                p {
+                    display: none;
+                }
+            }
+        }
     }
 }

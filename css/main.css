@@ -189,19 +189,6 @@ nav ul li a {
   height: 90vh;
   background: url("../img/header_image.jpg") no-repeat 50% 50%;
   background-size: cover;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 #header .text-wrapper {
@@ -238,7 +225,29 @@ nav ul li a {
           transform: rotate(180deg);
 }
 
+#header-overlay {
+  background: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 @media (max-width: 1024px) {
+  #header {
+    min-height: 450px;
+  }
   #header h1 {
     font-size: 3rem;
   }
@@ -253,6 +262,9 @@ nav ul li a {
 @media (max-width: 800px) {
   #header h1 br {
     display: none;
+  }
+  #header .text-wrapper {
+    width: 90%;
   }
 }
 
@@ -272,10 +284,10 @@ nav ul li a {
 }
 
 #featured-section #left-arrow, #featured-section #right-arrow {
-  height: 67px;
-  width: 27px;
+  height: 57px;
+  width: 17px;
   background: url("../img/svg/arrow_dark.svg") no-repeat 50% 50%;
-  background-size: cover;
+  background-size: contain;
   margin: auto;
   position: absolute;
   top: 50%;
@@ -293,12 +305,11 @@ nav ul li a {
 }
 
 #featured-section .slide {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   height: 100%;
-  width: 94%;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -312,11 +323,11 @@ nav ul li a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 40%;
 }
 
 #featured-section .text-section .text-wrapper {
-  height: 370px;
-  width: 370px;
+  height: auto;
   padding-left: 20px;
   border-left: solid #181D48 3px;
 }
@@ -336,19 +347,47 @@ nav ul li a {
   margin: 15px 0;
 }
 
+#featured-section .image-section {
+  width: 60%;
+}
+
 #featured-section #faborg-image {
-  background: url("../img/faborg_group.png") no-repeat 50% 50%;
+  background: url("../img/faborg.png") no-repeat 50% 50%;
   background-size: contain;
 }
 
 #featured-section #alborg-image {
-  background: url("../img/alborg_group.png") no-repeat 50%;
+  background: url("../img/alborg.png") no-repeat 50%;
   background-size: contain;
 }
 
 #featured-section #tonder-image {
-  background: url("../img/tonder_group.png") no-repeat 50%;
+  background: url("../img/tonder.png") no-repeat 50%;
   background-size: contain;
+}
+
+@media (max-width: 900px) {
+  #featured-section .text-section .text-wrapper h1 {
+    font-size: 5.3rem;
+  }
+  #featured-section .text-section .text-wrapper p {
+    font-size: 1.7rem;
+  }
+}
+
+@media (max-width: 800px) {
+  #featured-section #featured-button {
+    top: 3%;
+  }
+  #featured-section .text-section .text-wrapper {
+    border: none;
+    height: auto;
+    width: auto;
+    padding: 0;
+  }
+  #featured-section .text-section .text-wrapper p {
+    display: none;
+  }
 }
 
 button {
@@ -380,6 +419,14 @@ button a {
 
 button#small {
   font-size: 2rem;
+}
+
+@media (max-width: 900px) {
+  button {
+    font-size: 1.6rem;
+    height: 40px;
+    width: 180px;
+  }
 }
 
 #info-section {
