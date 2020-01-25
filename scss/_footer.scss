@@ -8,7 +8,7 @@
     position: relative;
 
     #footer-top {
-        height: 45%;
+        height: 35%;
         width: 80%;
         margin: 0 auto;
         border-bottom: 1px solid $light;
@@ -20,6 +20,7 @@
             letter-spacing: 0.3rem;
             text-transform: uppercase;
             text-align: center;
+            margin: 20px 0;
         }
 
         #social {
@@ -59,8 +60,8 @@
         height: 55%;
         width: 80%;
         margin: 0 auto;
-        display: grid;
-        grid-template-columns: repeat(6, 1fr);
+        display: flex;
+        justify-content: center;
         padding-top: 30px;
 
         #footer-logo {
@@ -68,19 +69,16 @@
             width: 140px;
             background: url('../img/duckfeet_logo_light.png') no-repeat;
             background-size: contain;
+            margin-right: 30px;
         }
 
         .footer-list {
-            margin: 0 30px;
-        }
-
-        p {
-            letter-spacing: 0.15rem;
+            margin: 0 15px;
         }
 
         h2 {
             font-weight: 700;
-            font-size: 1.375rem;
+            font-size: 1.1rem;
         }
 
         ul {
@@ -106,6 +104,57 @@
     }
 
     #copyright {
+        height: 5%;
         text-align: center;
+    }
+}
+
+@media (max-width: 1020px) {
+   #footer {
+        #footer-bottom {
+            #footer-logo {
+                height: 120px;
+                width: 120px;
+            }
+
+            li {
+                font-size: 12px;
+            }
+        }
+   } 
+}
+
+@media (max-width: 900px) {
+    #footer {
+        height: 300px;
+
+        #footer-top {
+            border: none;
+            padding: 0;
+            height: auto;
+
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            .social-icon {
+                height: 40px;
+                width: 40px;
+                margin: 0 10px;
+            }
+        }
+
+        #footer-bottom {
+            height: auto;
+            padding: 0;
+
+            #footer-logo {
+                display: none;
+            }
+
+            ul {
+                display: none;
+            }
+        }
     }
 }
