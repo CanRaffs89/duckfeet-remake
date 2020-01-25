@@ -376,8 +376,22 @@ nav ul li a {
 }
 
 @media (max-width: 800px) {
+  #featured-section {
+    margin-bottom: 20px;
+  }
   #featured-section #featured-button {
     top: 3%;
+  }
+  #featured-section .slide {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #featured-section .text-section {
+    height: 20%;
+    width: 100%;
+    margin-bottom: 20px;
   }
   #featured-section .text-section .text-wrapper {
     border: none;
@@ -385,8 +399,27 @@ nav ul li a {
     width: auto;
     padding: 0;
   }
+  #featured-section .text-section .text-wrapper h1 {
+    font-size: 4rem;
+  }
   #featured-section .text-section .text-wrapper p {
     display: none;
+  }
+  #featured-section .text-section button {
+    width: 100%;
+  }
+  #featured-section .image-section {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    height: 80%;
+    width: auto;
+    margin-right: 20px;
+    margin-top: 40px;
+  }
+  #featured-section #alborg-image, #featured-section #tonder-image {
+    -webkit-transform: rotate(-30deg);
+            transform: rotate(-30deg);
   }
 }
 

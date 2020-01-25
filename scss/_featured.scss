@@ -105,21 +105,51 @@
 
 @media (max-width: 800px) {
     #featured-section {
+        margin-bottom: 20px;
+        
         #featured-button {
             top: 3%;
         }
+
+        .slide {
+            flex-direction: column;
+        }
         
         .text-section {
+            height: 20%;
+            width: 100%;
+            margin-bottom: 20px;
+
             .text-wrapper {
                 border: none;
                 height: auto;
                 width: auto;
                 padding: 0;
 
+                h1 {
+                    font-size: 4rem;
+                }
+
                 p {
                     display: none;
                 }
             }
+
+            button {
+                width: 100%;
+            }
+        }
+
+        .image-section {
+            order: -1;
+            height: 80%;
+            width: auto;
+            margin-right: 20px;
+            margin-top: 40px;
+        }
+
+        #alborg-image, #tonder-image {
+            transform: rotate(-30deg);
         }
     }
 }
